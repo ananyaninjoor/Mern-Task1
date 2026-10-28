@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ananya | Item CRUD App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Item Management</h1>
+
+  <!-- FORM: used for both Add and Edit -->
+  <div class="form-box">
+    <div class="form-row">
+      <label for="nameInput">Name</label>
+      <input type="text" id="nameInput" placeholder="Enter item name" />
+    </div>
+
+    <div class="form-row">
+      <label for="priceInput">Price</label>
+      <input type="number" id="priceInput" placeholder="Enter item price" />
+    </div>
+
+    <!-- This hidden field stores the ID of the item being edited.
+         It stays empty when we are adding a new item. -->
+    <input type="hidden" id="editId" />
+
+    <button id="submitBtn" onclick="handleSubmit()">Submit</button>
+  </div>
+
+  <p id="statusMsg" class="status-msg"></p>
+
+  <!-- TABLE: shows all items -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="itemTableBody">
+      <!-- Rows are added here by JavaScript -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

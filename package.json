@@ -1,0 +1,13 @@
+{
+  "name": "crud-lab",
+  "version": "1.0.0",
+  "description": "Simple CRUD lab task using Express.js and REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
